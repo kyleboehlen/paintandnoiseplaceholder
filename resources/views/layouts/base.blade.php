@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="{{ url('favicon.ico') }}">
+
+        <title>{{ config('app.name', 'P&N') }}</title>
+
+        <!-- Styles -->
+        <link href="{{ url('css/app.css') }}" rel="stylesheet">
+    </head>
+        @yield('body')
+</html>

@@ -11,6 +11,7 @@
 |
 */
 
-$router->get('/', function () use ($router) {
-    return $router->app->version();
+// This encompasess every single paint and noise url that could be out there pointing towards some dead link right now
+$router->get('/{route:.*}', function () use ($router) {
+    return view('index');
 });
