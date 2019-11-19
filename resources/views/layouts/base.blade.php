@@ -5,9 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Favicon -->
-        <link rel="shortcut icon" href="{{ url('favicon.ico') }}">
+        <link rel="shortcut icon" href="{{ route('favicon') }}">
 
-        <title>{{ config('app.name', 'P&N') }}</title>
+        <title>{{ env('APP_NAME', 'P&N') }}</title>
 
         <!-- Styles -->
         <link href="{{ url('css/app.css') }}" rel="stylesheet">
