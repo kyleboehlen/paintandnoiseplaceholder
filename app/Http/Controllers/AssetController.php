@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Intervention\Image\ImageManager;
+use App\Http\Helpers\Team;
 
 class AssetController extends Controller
 {
@@ -16,7 +17,7 @@ class AssetController extends Controller
         $this->team_file_ext = env('TEAM_FILE_EXT', '.jpg');
         
         // File name array
-        $this->team_names = ['kyle', 'jody', ];
+        $this->team_names = Team::NAMES;
 
         // Instantiate Image Intervention
         $this->image = new ImageManager(array('driver' => 'imagick'));
