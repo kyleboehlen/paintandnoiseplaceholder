@@ -29,6 +29,12 @@ $router->get('/asset/team/{name}', [
     'uses' => 'AssetController@team',
 ]);
 
+// Social Icons
+$router->get('/asset/social/{icon}', [
+    'as' => 'social',
+    'uses' => 'AssetController@social',
+]);
+
 // This encompasess every single paint and noise url that could be out there pointing towards some dead link right now
 $router->get('/{route:.*}', function () use ($router) {
     return view('index');
