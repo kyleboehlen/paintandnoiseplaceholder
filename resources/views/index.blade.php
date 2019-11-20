@@ -8,6 +8,15 @@
         {{-- Title --}}
         <h1>{{ env('APP_NAME', 'P&N') }}</h1>
 
+        {{-- Description --}}
+        <h2>Our Mission</h2>
+
+        <p>
+            @foreach(explode('.', App\Http\Helpers\Splash::DESCRIPTION) as $line)
+                {{ $line }}<br/>
+            @endforeach
+        </p>
+
         {{-- Social section --}}
         <h2>Follow Us</h2>
 
