@@ -9,7 +9,7 @@
         <h1>{{ env('APP_NAME', 'P&N') }}</h1>
 
         {{-- Description --}}
-        <h2>Our Mission</h2>
+        <h2>Our Mission</h2><hr>
 
         <p>
             @foreach(explode('.', App\Http\Helpers\Splash::DESCRIPTION) as $line)
@@ -18,7 +18,7 @@
         </p>
 
         {{-- Social section --}}
-        <h2>Follow Us</h2>
+        <h2>Follow Us</h2><hr>
 
         <div class="figure-container">
             {{-- Iterate through social class accounts property --}}
@@ -33,7 +33,7 @@
         </div>
 
         {{-- Team section --}}
-        <h2>Our Team</h2>
+        <h2>Our Team</h2><hr>
 
         <div class="figure-container">
             {{-- Iterate through team class members property --}}

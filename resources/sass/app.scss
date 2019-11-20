@@ -1,10 +1,99 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Aclonica|Fredericka+the+Great|Indie+Flower|Lora&display=swap');
 
 // Variables
 @import 'variables';
 
+html
+{
+    height: 100%;
+}
+
 body
 {
-    background-color: $test;
+    background-color: $black;
+    height: 100%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#main-logo
+{
+    height: auto;
+    margin-bottom: 0%;
+    margin-left: 45%;
+    margin-right: 45%;
+    width: 10%;
+}
+
+h1
+{
+    color: $white;
+    font-family: $title-font;
+    font-size: 3.25em;
+    margin-bottom: 5%;
+    margin-top: 0%;
+    text-align: center;
+}
+
+p
+{
+    color: $white;
+    font-family: $body-font;
+    font-size: 1.25em;
+    text-align: center;
+}
+
+h2
+{
+    color: $white;
+    font-family: $header-font;
+    font-size: 2em;
+    text-align: center;
+    // text-decoration: underline;
+}
+
+.figure-container
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    figure
+    {
+        img
+        {
+            height: 150px;
+            border-radius: 50%;
+            width: auto;
+        }
+
+        figcaption
+        {
+            color: $white;
+            font-family: $tool-font;
+            font-size: 1.5em;
+            text-align: center;
+        }
+
+        a
+        {
+            text-decoration: none;
+
+            &:hover figcaption
+            {
+                color: $dark-grey;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+footer
+{
+    p
+    {
+        color: $white;
+        font-family: $body-font;
+    }
 }
