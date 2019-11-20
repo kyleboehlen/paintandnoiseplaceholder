@@ -17,7 +17,7 @@ class AssetController extends Controller
         $this->team_file_ext = env('TEAM_FILE_EXT', '.jpg');
         
         // File name array
-        $this->team_names = Team::NAMES;
+        $this->team_names = array_column(Team::MEMBERS, 'name');
 
         // Instantiate Image Intervention
         $this->image = new ImageManager(array('driver' => 'imagick'));

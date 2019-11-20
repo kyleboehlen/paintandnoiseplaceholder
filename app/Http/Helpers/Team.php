@@ -4,5 +4,14 @@ namespace App\Http\Helpers;
 
 class Team
 {
-    const NAMES = ['kyle', 'jody', ];
+    const MEMBERS = array(
+        [
+            'name' => 'kyle',
+            'full_name' => 'Kyle Boehlen',
+        ],
+        [
+            'name' => 'jody',
+            'full_name' => 'Jody Martin',
+        ],
+    );
 }
