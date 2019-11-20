@@ -4,7 +4,8 @@
   "description": "Splash page placeholder for www.paintandnoise.com",
   "main": "index.php",
   "scripts": {
-    "build-css": "npx node-sass resources/sass/app.scss public/app.css"
+    "build-css": "npx node-sass resources/sass/app.scss public/app.css",
+    "watch-css": "nodemon -e scss -x npm run build-css;"
   },
   "repository": {
     "type": "git",
