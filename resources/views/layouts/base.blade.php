@@ -10,7 +10,7 @@
         <title>{{ env('APP_NAME', 'P&N') }}</title>
 
         <!-- Styles -->
-        <link href="{{ url('css/app.css') }}" rel="stylesheet">
+        <link href="{{ route('css') }}" rel="stylesheet">
     </head>
         @yield('body')
 </html>

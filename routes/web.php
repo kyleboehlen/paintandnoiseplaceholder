@@ -35,6 +35,13 @@ $router->get('/asset/social/{icon}', [
     'uses' => 'AssetController@social',
 ]);
 
+// CSS file
+$router->get('/asset/app.css', ['as' => 'css', function () {
+    $content = file_get_contents(app()->basePath() . '/public/app.css');
+    $status = 200;
+    return ( new Illuminate\Http\Response($content, 200))->header('Content-Type', 'text/css');
+}]);
+
 // This encompasess every single paint and noise url that could be out there pointing towards some dead link right now
 $router->get('/{route:.*}', function () use ($router) {
     return view('index');
