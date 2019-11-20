@@ -15,6 +15,12 @@ body
     height: 100%;
     margin-left: 20%;
     margin-right: 20%;
+
+    @media only screen and (max-width: 400px)
+    {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
 }
 
 #main-logo
@@ -24,6 +30,27 @@ body
     margin-left: 45%;
     margin-right: 45%;
     width: 10%;
+
+    @media only screen and (max-width: 1000px)
+    {
+        margin-left: 40%;
+        margin-right: 40%;
+        width: 20%;
+    }
+
+    @media only screen and (max-width: 800px)
+    {
+        margin-left: 35%;
+        margin-right: 35%;
+        width: 30%;
+    }
+
+    @media only screen and (max-width: 400px)
+    {
+        margin-left: 25%;
+        margin-right: 25%;
+        width: 50%;
+    }
 }
 
 h1
@@ -34,6 +61,26 @@ h1
     margin-bottom: 5%;
     margin-top: 0%;
     text-align: center;
+
+    @media only screen and (max-width: 450px)
+    {
+        font-size: 2.75em;
+    }
+
+    @media only screen and (max-width: 350px)
+    {
+        font-size: 2.5em;
+    }
+
+    @media only screen and (max-width: 300px)
+    {
+        font-size: 2.25em;
+    }
+
+    @media only screen and (max-width: 251px) // For some reason below 300 firefox doesn't recognize it at the width anymore and you have to go one under?
+    {
+        font-size: 1.75em;
+    }
 }
 
 p
@@ -42,6 +89,16 @@ p
     font-family: $body-font;
     font-size: 1.25em;
     text-align: center;
+
+    @media only screen and (max-width: 450px)
+    {
+        font-size: 1em;
+    }
+
+    @media only screen and (max-width: 400px)
+    {
+        text-align: justify;
+    }
 }
 
 h2
@@ -50,7 +107,16 @@ h2
     font-family: $header-font;
     font-size: 2em;
     text-align: center;
-    // text-decoration: underline;
+    
+    @media only screen and (max-width: 450px)
+    {
+        font-size: 1.75em;
+    }
+
+    @media only screen and (max-width: 300px)
+    {
+        font-size: 1.25em;
+    }
 }
 
 .figure-container
@@ -95,5 +161,20 @@ footer
     {
         color: $white;
         font-family: $body-font;
+
+        @media only screen and (max-width: 450px)
+        {
+            font-size: 1em;
+        }
+
+        @media only screen and (max-width: 400px)
+        {
+            text-align: center;
+        }
+
+        @media only screen and (max-width: 300px)
+        {
+            font-size: .75em;
+        }
     }
 }
