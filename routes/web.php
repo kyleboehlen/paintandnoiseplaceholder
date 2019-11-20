@@ -11,6 +11,24 @@
 |
 */
 
+// Logo
+$router->get('/asset/logo', [
+    'as' => 'logo',
+    'uses' => 'AssetController@logo',
+]);
+
+// Favicon
+$router->get('/asset/favicon', [
+    'as' => 'favicon',
+    'uses' => 'AssetController@favicon',
+]);
+
+// Team Pics
+$router->get('/asset/team/{name}', [
+    'as' => 'team',
+    'uses' => 'AssetController@team',
+]);
+
 // This encompasess every single paint and noise url that could be out there pointing towards some dead link right now
 $router->get('/{route:.*}', function () use ($router) {
     return view('index');
