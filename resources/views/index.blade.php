@@ -24,7 +24,7 @@
             {{-- Iterate through social class accounts property --}}
             @foreach(App\Http\Helpers\Social::ACCOUNTS as $account)
                 <figure>
-                    <a href="{{ $account['url'] . $account['username'] }}">
+                    <a href="{{ $account['url'] . $account['username'] }}" target="_blank">
                         <img src="{{ route('social', ['icon' => $account['icon']]) }}"/>
                         <figcaption>{{ $account['service'] }}</figcaption>
                     </a>
