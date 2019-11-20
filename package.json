@@ -1,0 +1,22 @@
+{
+  "name": "paintandnoiseplaceholder",
+  "version": "1.0.0",
+  "description": "Splash page placeholder for www.paintandnoise.com",
+  "main": "index.php",
+  "scripts": {
+    "build-css": "npx node-sass resources/sass/app.scss public/app.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kyleboehlen/paintandnoiseplaceholder.git"
+  },
+  "author": "kyleboehlen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kyleboehlen/paintandnoiseplaceholder/issues"
+  },
+  "homepage": "https://github.com/kyleboehlen/paintandnoiseplaceholder#readme",
+  "dependencies": {
+    "node-sass": "^4.13.0"
+  }
+}

@@ -77,3 +77,13 @@ Allow apache to serve the files
 `sudo chown -R www-data:{your_user_group} paintandnoise`
 
 <br/>
+Install the node dependancies
+
+`npm install`
+
+<br/>
+Compile the stylesheet
+
+`npm run build-css`
+
+<br/>
