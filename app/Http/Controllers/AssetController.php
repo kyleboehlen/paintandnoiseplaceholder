@@ -17,6 +17,7 @@ class AssetController extends Controller
         $this->favicon = env('FAVICON_FILE_NAME', 'favicon.ico');
         $this->team_file_ext = env('TEAM_FILE_EXT', '.jpg');
         $this->social_file_ext = env('SOCIAL_FILE_EXT', '.png');
+        $this->icon_size = env('ICON_SIZE', 600);
         
         // Create arrays from helper properties
         $this->team_names = array_column(Team::MEMBERS, 'name');
@@ -41,7 +42,7 @@ class AssetController extends Controller
         // Validate the name
         if(in_array($name, $this->team_names))
         {
-            return $this->image->make($this->path . $name . $this->team_file_ext)->fit(600, 600)->response();
+            return $this->image->make($this->path . $name . $this->team_file_ext)->fit($this->icon_size, $this->icon_size)->response();
         }
 
         return redirect('/');
@@ -52,7 +53,7 @@ class AssetController extends Controller
         // Validate the icon
         if(in_array($icon, $this->social_icons))
         {
-            return $this->image->make($this->path . $icon . $this->social_file_ext)->fit(600, 600)->response();
+            return $this->image->make($this->path . $icon . $this->social_file_ext)->fit($this->icon_size, $this->icon_size)->response();
         }
 
         return redirect('/');
