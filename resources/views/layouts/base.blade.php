@@ -13,6 +13,8 @@
 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="{{ substr(\App\Http\Helpers\Splash::DESCRIPTION, 0, 160) }}">
+        <meta name="keywords" content="art, music, paint, noise, showcase accounts, feature, community, creators, collab">
 
         <!-- Favicon -->
         <link rel="shortcut icon" href="{{ route('favicon') }}">
