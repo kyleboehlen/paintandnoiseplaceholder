@@ -39,8 +39,10 @@
             {{-- Iterate through team class members property --}}
             @foreach(App\Http\Helpers\Team::MEMBERS as $team_member)
                 <figure>
-                    <img src="{{ route('team', ['name' => $team_member['name']]) }}"/>
-                    <figcaption>{{ $team_member['full_name'] }}</figcaption>
+                    <a href="{{ $team_member['url'] }}" target="_blank">
+                        <img src="{{ route('team', ['name' => $team_member['name']]) }}"/>
+                        <figcaption>{{ $team_member['full_name'] }}</figcaption>
+                    </a>
                 </figure>
             @endforeach
         </div>

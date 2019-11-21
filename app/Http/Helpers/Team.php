@@ -8,10 +8,12 @@ class Team
         [
             'name' => 'kyle',
             'full_name' => 'Kyle Boehlen',
+            'url' => 'https://www.kyleboehlen.com',
         ],
         [
             'name' => 'jody',
             'full_name' => 'Jody Martin',
+            'url' => 'https://www.instagram.com/jodemode'
         ],
     );
 }
