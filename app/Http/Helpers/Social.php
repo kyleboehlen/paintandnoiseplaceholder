@@ -9,7 +9,7 @@ class Social
             'service' => 'Facebook',
             'icon' => 'facebook',
             'url' => 'https://www.facebook.com/',
-            'username' => 'paintandnoise',
+            'username' => 'paintandnoiseofficial',
         ],
         [
             'service' => 'Instagram',
