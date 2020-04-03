@@ -45,6 +45,12 @@ $router->get('/asset/app.css', ['as' => 'css', function () {
     return ( new Illuminate\Http\Response($content, 200))->header('Content-Type', 'text/css')->header('Cache-Control', 'public, max-age=' . $timeout)->header('Last-Modified', $time);
 }]);
 
+$router->get('/spotify', function () use ($router) {
+    $url = env('SPOTIFY_URL');
+    $user = env('SPOTIFY_USER');
+    return redirect($url . $user);
+});
+
 // This encompasess every single paint and noise url that could be out there pointing towards some dead link right now
 $router->get('/{route:.*}', function () use ($router) {
     return view('index');
